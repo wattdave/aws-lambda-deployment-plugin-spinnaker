@@ -54,6 +54,7 @@ public class LambdaDeploymentStage implements StageDefinitionBuilder {
         builder.withTask("lambdaVerificationTask", LambdaVerificationTask.class);
         builder.withTask("lambdaCacheRefreshTask", LambdaCacheRefreshTask.class);
         builder.withTask("lambdaEventConfigurationTask", LambdaUpdateEventConfigurationTask.class);
+        builder.withTask("lambdaUpdateEdgeConfigurationTask", LambdaUpdateEdgeConfigurationTask.class);
         builder.withTask("lambdaVerificationTask", LambdaVerificationTask.class);
     }
 }
